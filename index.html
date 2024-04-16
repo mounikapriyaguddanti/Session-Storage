@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="login-container">
+            <h1>Login</h1>
+            <form id="login-form">
+                <input type="text" placeholder="Username" id="login-username" required>
+                <input type="password" placeholder="Password" id="login-password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="register-link">Register</a></p>
+        </div>
+
+        <div class="form-container hidden" id="register-container">
+            <h1>Register</h1>
+            <form id="register-form">
+                <input type="text" placeholder="Full Name" id="register-fullname" required>
+                <input type="email" placeholder="Email" id="register-email" required>
+                <input type="text" placeholder="Mobile Number" id="register-mobile" required>
+                <input type="text" placeholder="Username" id="register-username" required>
+                <input type="password" placeholder="Password" id="register-password" required>
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+        </div>
+
+        <div class="dashboard hidden" id="dashboard-container">
+            <h1>Dashboard</h1>
+            <table id="user-table">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>Username</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <button id="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
